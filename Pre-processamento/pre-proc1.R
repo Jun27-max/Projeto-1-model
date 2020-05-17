@@ -8,7 +8,7 @@ class(vec1)
 class(fac_vec1)
 
 #Variaveis categoricas nominais
-#NÃ£o existe uma ordem implÃ�cita
+#NÃ£o existe uma ordem implÃ?cita
 
 animais <- c("Zebra","Pantera","Rinoceronte","Macaco","Tigre")
 animais
@@ -55,7 +55,7 @@ set1
 
 
 #Transformando os dados
-#R apenas criou os nÃ�veis, o que nÃ£o significa que exista hierarquia
+#R apenas criou os nÃ?veis, o que nÃ£o significa que exista hierarquia
 f.set1 <- factor(set1)
 f.set1
 class(f.set1)
@@ -84,7 +84,7 @@ str(df)
 
 #Niveis dos fatores
 #Internamente, o R armazena valores inteiros e faz um mapeamento para as strings (em ordem alfabÃ©tica)
-#e agrupa as estatÃ�sticas por nÃ�veis. Agora, se fizermos sumarizaÃ§Ã£o de estatÃ�sticas, Ã© possivel visualizar
+#e agrupa as estatÃ?sticas por nÃ?veis. Agora, se fizermos sumarizaÃ§Ã£o de estatÃ?sticas, Ã© possivel visualizar
 #a contabilizaÃ§Ã£o de para cada categoria
 
 levels(df$Etnia)
@@ -100,8 +100,13 @@ summary(lm(Idade~Etnia, data = df))
 
 #Convertendo uma coluna em vÃ¡riavel categÃ³rica. Isso criara um fator nÃ£o-ordenado
 
+
+getwd()
+
 df
 str(df)
 df$Estado_Civil.cat <- factor(df$Estado_Civil, labels = c("Solteiro", "Casado", "Divorciado"))
 df
 str(df)
+
+#Teste
